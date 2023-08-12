@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'app-primary': '#313F38',
+        'app-sec': '#FCD043',
       }
     },
     fontFamily: {
