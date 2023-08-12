@@ -11,8 +11,8 @@ export default {
       }
     },
     fontFamily: {
-      sans: ['Helvetica Neue LT Std', 'sans-serif'],
-      serif: ['Cormorant Upright', 'serif'],
+      sans: ['Miracle', 'sans-serif'],
+      serif: ['Helvetica Neue LT Std', 'serif'],
     },
   },
   plugins: [],
