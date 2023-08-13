@@ -14,7 +14,7 @@ const Navbar = () => {
             className="w-[110px] lg:w-[190px] cursor-pointer"
           />
         </div>
-        <ul className="flex gap-12">
+        <ul className="flex gap-12 items-center justify-center flex-1">
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
             Home
           </li>

@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Miracle";
-  src: url("../src/assets/fonts/Miracle.otf");
-}
-@font-face {
-  font-family: "Helvetica Neue LT Std";
-  src: url("../src/assets/fonts/Helvetica-Neue-LT-Std-45-Light.otf");
-}
+    font-family: "Miracle";
+    src: url("../src/assets/fonts/Miracle.otf");
+  }
+  @font-face {
+    font-family: "Helvetica Neue LT Std";
+    src: url("../src/assets/fonts/Helvetica-Neue-LT-Std-45-Light.otf");
+  }
+  
