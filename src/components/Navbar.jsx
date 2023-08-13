@@ -14,7 +14,7 @@ const Navbar = () => {
             className="w-[110px] lg:w-[190px] cursor-pointer"
           />
         </div>
-        <ul className="flex gap-12 items-center justify-center flex-1">
+        <ul className="flex gap-10 items-center justify-center flex-1">
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
             Home
           </li>
@@ -60,7 +60,12 @@ const Navbar = () => {
           />
         </svg>
         {toggleMenu && (
-          <div className="flex flex-col items-center py-12 gap-10 fixed w-full h-screen top-0 left-0 bg-app-primary ease-in duration-500 lg:hidden z-30">
+          <div className="flex flex-col items-start fixed w-full min-h-screen top-0 left-0 bg-app-primary ease-in duration-500 lg:hidden z-30">
+            <img
+              src={images.sanklp_logo}
+              alt=""
+              className="w-[40%] pt-3 -ml-2"
+            />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -68,7 +73,7 @@ const Navbar = () => {
               strokeWidth={1.5}
               stroke="currentColor"
               className="w-6 h-6 cursor-pointer absolute top-5 right-5 hover:text-black ease-in duration-400"
-              onClick={()=>setToggleMenu(false)}
+              onClick={() => setToggleMenu(false)}
             >
               <path
                 strokeLinecap="round"
@@ -77,29 +82,43 @@ const Navbar = () => {
               />
             </svg>
 
-            <ul className="flex flex-col items-center justify-center gap-12 text-2xl">
-              <li className="font-sans cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-                Home
+            <ul className="flex flex-col pl-3 font-semibold gap-6 text-3xl font-serif py-10">
+              <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
+                Home <img src={images.star} alt="" className="inline -mt-2"/>
               </li>
-              <li className="font-sans cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
+              <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
                 About
               </li>
-              <li className="font-sans cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
+              <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
                 Rooms
               </li>
-              <li className="font-sans cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
+              <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
                 Restaurant
               </li>
-              <li className="font-sans cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
+              <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
                 Conference Hall
               </li>
-              <li className="font-sans cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
+              <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
                 Contacts
               </li>
             </ul>
-            <button className="font-serif rounded-full bg-black hover:bg-gray-800 ease-in-out duration-500 pt-3 pb-2 px-4 cursor-pointer uppercase leading-tight text-sm" onClick={()=>setToggleMenu(false)}>
+            <button
+              className="font-serif ml-3 rounded-full bg-black hover:bg-gray-800 ease-in-out duration-500 pt-3 pb-2 px-4 cursor-pointer uppercase leading-tight text-sm"
+              onClick={() => setToggleMenu(false)}
+            >
               Report an Issue
             </button>
+            <div className=" text-[#acacac] font-serif flex flex-col gap-2 items-center text-center w-screen pt-16 justify-center">
+              <h1 className="underline text-xl font-semibold">+38 032 297 50 20</h1>
+              <p className="uppercase text-center text-lg font-semibold">
+                8 Lystopadovoho Chynu,Lviv
+              </p>
+            </div>
+            <div className="flex justify-evenly pt-12 w-screen">
+              <p className="uppercase font-serif underline text-[#acacac] font-semibold">Facebook</p>
+              <p className="uppercase font-serif underline text-[#acacac] font-semibold">Instagram</p>
+              <p className="uppercase font-serif underline text-[#acacac] font-semibold">twitter</p>
+            </div>
           </div>
         )}
       </div>
