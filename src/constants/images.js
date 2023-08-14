@@ -11,6 +11,9 @@ import label from '../assets/label.svg'
 import Room1 from '../assets/Room1.jpeg'
 import Room2 from '../assets/Room2.jpeg'
 import arrow_button from '../assets/button_arrow.svg'
+import vectorSine from '../assets/VectorSine.png'
+import Room3 from '../assets/Room3.jpeg'
+import living from '../assets/living.jpeg'
 
 
 
@@ -30,4 +33,7 @@ export default {
     arrow_button,
     Room2,
     Room1,
+    Room3,
+    vectorSine,
+    living,
 };
