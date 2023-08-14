@@ -9,6 +9,7 @@ export default {
       colors: {
         'app-primary': '#313F38',
         'app-sec': '#FCD043',
+        'app-tert': '#FFFCF6',
       }
     },
     fontFamily: {

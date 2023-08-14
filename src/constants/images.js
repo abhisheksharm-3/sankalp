@@ -8,6 +8,9 @@ import about1 from '../assets/about1.jpeg'
 import about2 from '../assets/about2.jpeg'
 import arrow from '../assets/arrow.svg'
 import label from '../assets/label.svg'
+import Room1 from '../assets/Room1.jpeg'
+import Room2 from '../assets/Room2.jpeg'
+import arrow_button from '../assets/button_arrow.svg'
 
 
 
@@ -24,4 +27,7 @@ export default {
     Polygon2,
     label,
     arrow,
+    arrow_button,
+    Room2,
+    Room1,
 };

@@ -32,13 +32,14 @@ const About = () => {
             <p className="text-app-sec italic text-left pt-36">Rooms</p>
             <p className="text-center text-white">and</p>
             <p className="text-right text-white">Apartments</p>
+            <img src={images.arrow} alt="" className=" w-[50%] m-auto pt-2"/>
             </div>
           </div>
           
           
         </div>
       </div>
-      <div className="xl:hidden flex flex-col gap-24 items-start">
+      <div className="xl:hidden flex flex-col gap-24 items-start pb-20">
         <div className="w-48 lg:w-56">
       <h1 className="text-app-sec text-6xl lg:text-7xl font-normal uppercase leading-[60px] text-right">
             About Us
