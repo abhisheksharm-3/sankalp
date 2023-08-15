@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import images from "../constants/images";
 
@@ -16,26 +17,26 @@ const Navbar = () => {
         </div>
         <ul className="flex gap-10 items-center justify-center flex-1">
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-            Home
+          <Link to="/">Home</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-            About
+          <Link to="/about-us">About</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-            Rooms
+          <Link to="/rooms">Rooms</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-            Restaurant
+          <Link to="/">Restaurant</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-            Conference Hall
+          <Link to="/">Conference Hall</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-            Contacts
+            <Link to="/">Contacts</Link>
           </li>
         </ul>
         <button className="font-serif rounded-full bg-black hover:bg-gray-800 ease-in-out duration-500 py-2 px-4 cursor-pointer uppercase leading-tight">
-          Report an Issue
+        <Link to="/">Report an Issue</Link>
         </button>
       </div>
       <div className="flex lg:hidden items-center justify-between px-3">
@@ -84,29 +85,29 @@ const Navbar = () => {
 
             <ul className="flex flex-col pl-3 font-semibold gap-6 text-3xl font-serif py-10">
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-                Home <img src={images.star} alt="" className="inline -mt-2"/>
+              <Link to="/">Home</Link> <img src={images.star} alt="" className="inline -mt-2"/>
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-                About
+              <Link to="/about-us">About</Link>
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-                Rooms
+              <Link to="/rooms">Rooms</Link>
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-                Restaurant
+              <Link to="/">Restaurant</Link>
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-                Conference Hall
+              <Link to="/">Conference Hall</Link>
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-                Contacts
+              <Link to="/">Contacts</Link>
               </li>
             </ul>
             <button
               className="font-serif ml-3 rounded-full bg-black hover:bg-gray-800 ease-in-out duration-500 pt-3 pb-2 px-4 cursor-pointer uppercase leading-tight text-sm"
               onClick={() => setToggleMenu(false)}
             >
-              Report an Issue
+              <Link to="/">Report an Issue</Link>
             </button>
             <div className=" text-[#acacac] font-serif flex flex-col gap-2 items-center text-center w-screen pt-16 justify-center">
               <h1 className="underline text-xl font-semibold">+38 032 297 50 20</h1>
