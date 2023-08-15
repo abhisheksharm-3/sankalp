@@ -14,6 +14,9 @@ import arrow_button from '../assets/button_arrow.svg'
 import vectorSine from '../assets/VectorSine.png'
 import Room3 from '../assets/Room3.jpeg'
 import living from '../assets/living.jpeg'
+import chair from '../assets/chair.jpeg'
+import arrow1 from '../assets/arrow1.svg'
+import Star2 from '../assets/Star2.svg'
 
 
 
@@ -36,4 +39,7 @@ export default {
     Room3,
     vectorSine,
     living,
+    chair,
+    arrow1,
+    Star2,
 };

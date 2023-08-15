@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import About from '../components/About'
 import Room from '../components/Room'
 import Info from '../components/Info'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Room />
       <Info />
+      <Footer theme="white"/>
     </div>
   )
 }
