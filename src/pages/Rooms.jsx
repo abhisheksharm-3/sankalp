@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import RoomHead from '../components/RoomHead'
 import RoomInfo from '../components/RoomInfo'
-import UtilityRoom from './UtilityRoom'
+import UtilityRoom from '../components/UtilityRoom'
 
 
 const Rooms = () => {

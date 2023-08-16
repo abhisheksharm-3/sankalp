@@ -66,7 +66,7 @@ const Navbar = () => {
             <img
               src={images.sanklp_logo}
               alt=""
-              className="w-[40%] pt-3 -ml-2"
+              className="w-[40%] pt-3"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
