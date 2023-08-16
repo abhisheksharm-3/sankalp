@@ -20,6 +20,9 @@ import Star2 from '../assets/Star2.svg'
 import util1 from '../assets/util1.jpeg'
 import util2 from '../assets/util2.jpeg'
 import label1 from '../assets/label1.svg'
+import restro1 from '../assets/restro1.jpeg'
+import restro2 from '../assets/restro2.jpeg'
+import restro3 from '../assets/restro3.jpeg'
 
 
 
@@ -48,4 +51,7 @@ export default {
     util1,
     util2,
     label1,
+    restro1,
+    restro2,
+    restro3,
 };
