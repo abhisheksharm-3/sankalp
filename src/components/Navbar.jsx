@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import images from "../constants/images";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
+  const location = useLocation();
   return (
     <nav className=" bg-app-primary text-white">
       <div className="hidden lg:flex justify-between items-center px-10 text-[13px] font-medium">
@@ -17,26 +18,26 @@ const Navbar = () => {
         </div>
         <ul className="flex gap-10 items-center justify-center flex-1">
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-          <Link to="/">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-          <Link to="/about-us">About</Link>
+            <Link to="/about-us">About</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-          <Link to="/rooms">Rooms</Link>
+            <Link to="/rooms">Rooms</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-          <Link to="/">Restaurant</Link>
+            <Link to="/">Restaurant</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-          <Link to="/">Conference Hall</Link>
+            <Link to="/">Conference Hall</Link>
           </li>
           <li className="font-serif cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
             <Link to="/">Contacts</Link>
           </li>
         </ul>
         <button className="font-serif rounded-full bg-black hover:bg-gray-800 ease-in-out duration-500 py-2 px-4 cursor-pointer uppercase leading-tight">
-        <Link to="/">Report an Issue</Link>
+          <Link to="/">Report an Issue</Link>
         </button>
       </div>
       <div className="flex lg:hidden items-center justify-between px-3">
@@ -85,22 +86,29 @@ const Navbar = () => {
 
             <ul className="flex flex-col pl-3 font-semibold gap-6 text-3xl font-serif py-10">
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-              <Link to="/">Home</Link> <img src={images.star} alt="" className="inline -mt-2"/>
+                <Link to="/">Home</Link>{" "}
+                {location.pathname === "/" && (
+                  <img src={images.star} alt="" className="inline -mt-2" />
+                )}
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-              <Link to="/about-us">About</Link>
+                <Link to="/about-us">About</Link> {location.pathname === "/about-us" && (
+                    <img src={images.star} alt="" className="inline -mt-2" />
+                  )}
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-              <Link to="/rooms">Rooms</Link>
+                <Link to="/rooms">Rooms</Link> {location.pathname === "/rooms" && (
+                    <img src={images.star} alt="" className="inline -mt-2" />
+                  )}
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-              <Link to="/">Restaurant</Link>
+                <Link to="/">Restaurant</Link>
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-              <Link to="/">Conference Hall</Link>
+                <Link to="/">Conference Hall</Link>
               </li>
               <li className="cursor-pointer ease-in-out duration-300 hover:text-[#acacac] uppercase leading-tight">
-              <Link to="/">Contacts</Link>
+                <Link to="/">Contacts</Link>
               </li>
             </ul>
             <button
@@ -110,15 +118,23 @@ const Navbar = () => {
               <Link to="/">Report an Issue</Link>
             </button>
             <div className=" text-[#acacac] font-serif flex flex-col gap-2 items-center text-center w-screen pt-16 justify-center">
-              <h1 className="underline text-xl font-semibold">+38 032 297 50 20</h1>
+              <h1 className="underline text-xl font-semibold">
+                +38 032 297 50 20
+              </h1>
               <p className="uppercase text-center text-lg font-semibold">
                 8 Lystopadovoho Chynu,Lviv
               </p>
             </div>
             <div className="flex justify-evenly pt-12 w-screen">
-              <p className="uppercase font-serif underline text-[#acacac] font-semibold">Facebook</p>
-              <p className="uppercase font-serif underline text-[#acacac] font-semibold">Instagram</p>
-              <p className="uppercase font-serif underline text-[#acacac] font-semibold">twitter</p>
+              <p className="uppercase font-serif underline text-[#acacac] font-semibold">
+                Facebook
+              </p>
+              <p className="uppercase font-serif underline text-[#acacac] font-semibold">
+                Instagram
+              </p>
+              <p className="uppercase font-serif underline text-[#acacac] font-semibold">
+                twitter
+              </p>
             </div>
           </div>
         )}
