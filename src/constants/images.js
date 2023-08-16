@@ -17,6 +17,9 @@ import living from '../assets/living.jpeg'
 import chair from '../assets/chair.jpeg'
 import arrow1 from '../assets/arrow1.svg'
 import Star2 from '../assets/Star2.svg'
+import util1 from '../assets/util1.jpeg'
+import util2 from '../assets/util2.jpeg'
+import label1 from '../assets/label1.svg'
 
 
 
@@ -42,4 +45,7 @@ export default {
     chair,
     arrow1,
     Star2,
+    util1,
+    util2,
+    label1,
 };
